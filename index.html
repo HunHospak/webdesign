@@ -4,14 +4,101 @@
         <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
         <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
         <link rel="stylesheet" type="text/css" href="resources/css/syle.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400&display=swap" rel="stylesheet">
-        <title>Omnifood</title>
+        <title>Hospak</title>
     </head>
     
     <body>
-        <div class="row">
-            <h1>Omnifood</h1>
-        </div>
+        <header>
+            <nav>
+                <div class="row">
+                    <img src="resources/img/signature.png" alt="H letter logo" class="logo">
+                    <ul class="main-nav">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About me</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="hero-text-box">
+                <h1>Kiss Ádám, <br> Junior Web Developer</h1>
+                <a class="btn btn-full" href="#">Hire me</a>
+                <a class="btn btn-ghost" href="#">Show me more</a>
+            </div>
+        </header>
+        
+        <section class="section-aboutme">
+            <div class="row">
+                <h2>About me</h2>
+            </div>
+            <div class="row">
+                <div class="col span_1_of_2 steps-box">
+                    <img src="resources/img/en.jpg" alt="A picture of the author of this page" class="profile-pic">
+                </div>
+                <div class="col span_1_of_2 steps-box">
+                    <div class="works-step">
+                        <div>Green Fox Academy</div>
+                        <p>An intensive bootcamp focusing on backend web development. In it's three phases we learned the fundamentals of java development, then went on learning the basics of Spring Framework. In it's last part we had a group project where we created an application using Spring and Angular and deployed it on AWS via CircleCI.</p>
+                    </div>
+                    <div class="works-step">
+                        <div>Széchenyi István University</div>
+                        <p>In the year 2019 I graduated as a Mechanical Engineer. It was a great challenge where I learned a lot about analytical thinking. We had extensive subjects in mathematics, physics and 3D design. A lot of project work used designing and manufacturing applications.</p>
+                    </div>
+                    <div class="works-step">
+                        <div>Work Experience</div>
+                        <p>During 2018 I was hired as a Process Engineer. My main tasks cosisted of creating daily statistics based on production records, being in continuous contact with QA and supporting foreign engineers with the installation of assembly lines.</p>
+                    </div>
+                    
+                    <a href="https://drive.google.com/uc?export=download&id=1yOCid8IDgIu1CK6PZHNPrCYyJCif8ErK" class="btn btn-full">Download CV</a>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section-features">
+            <div class="row">
+               <h2>Most Recent &mdash; Projects:</h2>
+                <p class="long-copy">
+                    A small description about each project and their main technology. At the bottom of each column there is a link provided to the github repo. If the project starts with GFA, then sadly only Green Fox Academy partner can visit that project.
+                </p>
+            </div>
+            <div class="row">
+                <div class="col span_1_of_4 box">
+                    <i class="material-icons md-48 icon-big">account_circle</i>
+                    <h3>Portfolio Design</h3>
+                    <p>
+                        The purpose of this project is to have a nicely collected portfolio about my projects and studies, and also to practice my HTML and CSS skills. This page is intended to be frequently updated with new projects and technologies.
+                    </p>
+                    <a href="https://github.com/HunHospak/webdesign" class="btn btn-ghost">Visit</a>
+                </div>
+                <div class="col span_1_of_4 box">
+                    <i class="material-icons md-48 icon-big">code</i>
+                    <h3>Spring &mdash; OAuth2</h3>
+                    <p>
+                        Most ambitious project so far. It is a basic webshop application focused on wine selling. Bigger features should include OAuthorization with Google and Facebook, placing orders (no buying yet), and using various SQL formulas. This project will also have an Angular frontend.
+                    </p>
+                    <a href="https://github.com/HunHospak/wineshop" class="btn btn-ghost">Visit</a>
+                </div>
+                <div class="col span_1_of_4 box">
+                    <i class="material-icons md-48 icon-big">schedule</i>
+                    <h3>GFA &mdash; Hackathon</h3>
+                    <p>
+                        A 24h group project, made during Hackathon at Green Fox Academy. It should simulate the main processes of a brewery, from storing raw materials, to producing beer. These processes are done with SQL queries, Authorization through endpoints. The frontend was done with Angular.
+                    </p>
+                    <a href="https://github.com/green-fox-academy/Back-Brew" class="btn btn-ghost">Visit</a>
+                </div>
+                <div class="col span_1_of_4 box">
+                    <i class="material-icons md-48 icon-big">supervisor_account</i>
+                    <h3>GFA &mdash; Flow Opal</h3>
+                    <p>
+                        The main/learning task of Green Fox Academy project phase for my group. Features focused on JWT authorization, Google Maps API, Mockito Tests, SQL queries, Web Scraping, all written in Spring. Frontend also made in Angular.
+                    </p>
+                    <a href="https://github.com/green-fox-academy/chama-opal" class="btn btn-ghost">Visit</a>
+                </div>
+            </div>
+            
+        </section>
     
     </body>
     
