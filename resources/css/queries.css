@@ -1,0 +1,74 @@
+
+/* BIG TABLE TO 1200px (widths smaller than the 1140px row) */
+@media only screen and (max-width: 1200px) {
+    .hero-text-box {
+        width: 100%;
+        padding: 0 2%;
+    }
+    
+    .row { padding: 0 2%; }
+}
+
+@media only screen and (max-width: 1024px) {
+    body { font-size: 18px; }
+    section { padding: 60px 0; }
+    
+    .plan-box p { text-align: start }
+    .plan-box div.middle-text {
+        height: 100%;
+        min-height: 420px;
+    }
+    .long-copy {
+        width: 80%;
+        margin-left: 10%;
+    }
+    
+    .btn-linkedin:link,
+    .btn-linkedin:visited{ margin-left: 10%; }
+}
+
+/*SMALL TABLET TO BIG ONE 768px to 1024px */
+@media only screen and (max-width: 900px) {
+    section { padding: 45px 0; }
+    .plan-box div.middle-text {
+        min-height: 520px;
+    }
+}
+
+
+/* SMALL PHONES TO TABLETS */
+@media only screen and (max-width: 767px) {
+    body { font-size: 16px; }
+    .profile-pic { 
+        height: 200px; 
+        width: 200px;
+        margin-bottom: 20px;
+    }
+    section { padding: 30px 0; }
+    .plan-box div.middle-text {
+        min-height: 150px;
+    }
+    .row { padding: 0 4%; }
+    .col { 
+        width: 100%;
+        margin: 0 0 0 1.6%;
+    }
+    
+    h1 { font-size: 180%; }
+    h2 { font-size: 150%; }
+    .steps-box:first-child { margin-top: 20px;}
+    
+    .long-copy { width: 100%; }
+    
+}
+
+/* SMALL PHONES FROM 0 TO 480px */
+@media only screen and (max-width: 480px) {
+    body { font-size: 14px; }
+    .main-nav {
+        display: none;
+    }
+    .btn-github:link,
+    .btn-github:visited{ margin-left: 10% }
+}
+
