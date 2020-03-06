@@ -87,19 +87,51 @@ h2:after {
     line-height: 145%;
     width: 70%;
     margin-left: 15%;
-    text-align:justify;
+    text-align: justify;
 }
 
-.box p {
-    text-align:justify;
-    font-size: 90%;
-    line-height: 145%;
-    height: 280px;
+.plan-box {
+    background-color: #fff;
+    border-radius: 8px;
+    width: 96%;
+    margin-left: 2%;
+    box-shadow: 0 2px 2px #ebebeb;
+}
+
+.plan-box div {
+    padding: 8px;
+    border-bottom: 1px solid #efefef;
+}
+
+.plan-box div:first-child {
+    background-color: #fcfcfc;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.plan-box div:last-child {
+    text-align: center;
+    border: none;
+}
+
+.plan-box div.middle-text {
+    height: 35vh;
+}
+
+.plan-box p {
+    font-size: 92%;
+    font-weight: 300;
+    line-height: 140%;
+    text-align: justify;
 }
 
 /* ------------------------------------------------ */
 /* FEATURES                                         */
 /* ------------------------------------------------ */
+
+.section-features {
+    background-color: #f4f4f4;
+}
 
 .section-features .long-copy {
     margin-bottom: 30px;
@@ -161,6 +193,48 @@ h2:after {
     color: #fff
 }
 
+.btn-social:link,
+.btn-social:visited{
+    margin-top: 4%;
+    width: 150px;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 8px 15px;
+    font-weight: 300;
+    border-radius: 5px;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+    box-shadow: 4px 4px 4px #ebebeb;
+}
+
+.btn-github:link,
+.btn-github:visited{
+    color: rgb(3, 3, 3);
+    margin-left: 5%;
+    border: 1px solid #24292e;
+}
+
+.btn-linkedin:link,
+.btn-linkedin:visited{
+    color: #fff;
+    background-color: #0072b1;
+    margin-left: 15%;
+}
+
+.btn-github:hover,
+.btn-github:active{
+    background-color: #191919;
+    color: #fff;
+    border: 1px solid #030303;
+}
+
+.btn-linkedin:hover,
+.btn-linkedin:active{
+    color: #fff;
+    background-color: #006095;
+}
+
 /* ------------------------------------------------ */
 /* HEADER                                           */
 /* ------------------------------------------------ */
@@ -170,6 +244,7 @@ header {
     background-size: cover;
     background-position: center;
     height: 100vh;
+    background-attachment: fixed;
 }
 
 .hero-text-box {
@@ -262,4 +337,34 @@ header {
     padding: 6px 0;
     letter-spacing: 1px;
     
+}
+
+/* ------------------------------------------------ */
+/* CONTACT ME                                       */
+/* ------------------------------------------------ */
+
+.section-contact h3 {
+    margin-top: 4%;
+    text-align: center;
+}
+
+.job-status {
+    margin: 4% 0 4% 30%;
+    width: 40%;
+    color: #fff;
+    background-color: #6ab44a;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 8px 15px;
+    font-weight: 400;
+    border-radius: 5px;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+    box-shadow: 4px 4px 4px #ebebeb;
+}
+
+ion-icon {
+    font-size: 20px;
+    vertical-align: center;
 }
