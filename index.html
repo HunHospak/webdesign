@@ -14,26 +14,27 @@
     </head>
     
     <body>
-        <header>
+        <header id="home">
             <nav>
                 <div class="row">
                     <img src="resources/img/signature.png" alt="H letter logo" class="logo">
-                    <ul class="main-nav">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About me</a></li>
-                        <li><a href="#">Projects</a></li>
-                        <li><a href="#">Contact</a></li>
+                    <ul class="main-nav js--main-nav">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#aboutme">About me</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
+                    <a class="mobile-nav-icon js--nav-icon"><ion-icon name="menu-outline"></ion-icon></a>
                 </div>
             </nav>
             <div class="hero-text-box">
                 <h1>Kiss Ádám, <br> Junior Web Developer</h1>
-                <a class="btn btn-full" href="#">Hire me</a>
-                <a class="btn btn-ghost" href="#">Show me more</a>
+                <a class="btn btn-full jss-scroll-to-contact" href="#">Hire me</a>
+                <a class="btn btn-ghost jss-scroll-to-aboutme" href="#">Show me more</a>
             </div>
         </header>
         
-        <section class="section-aboutme">
+        <section class="section-aboutme jss--section-aboutme" id="aboutme">
             <div class="row">
                 <h2>About me</h2>
             </div>
@@ -60,7 +61,7 @@
             </div>
         </section>
         
-        <section class="section-features">
+        <section class="section-features" id="projects">
             <div class="row">
                <h2>Most Recent &mdash; Projects:</h2>
                 <p class="long-copy">
@@ -135,7 +136,7 @@
             </div>
         </section>
         
-        <section class="section-contact">
+        <section class="section-contact js--section-contact" id="contact">
             <div class="row">
                 <h2>Get in touch</h2>
                 <p class="long-copy contacttext">
@@ -176,6 +177,9 @@
             </div>
         </footer>
         <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="vendors/js/jquery.waypoints.min.js"></script>
+        <script src="resources/js/scripts.js"></script>
     </body>
     
 </html>

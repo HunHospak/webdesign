@@ -49,9 +49,60 @@
         min-height: 150px;
     }
     .row { padding: 0 4%; }
-    .col { 
+    .col {
         width: 100%;
         margin: 0 0 0 1.6%;
+    }
+    
+    .main-nav { 
+        display: none;
+        float: left;
+        margin-top: 25px;
+        margin-left: 25px;
+    }
+    
+    .main-nav li { 
+        display: block;
+        margin: 0;
+        padding: 10px 0;
+        font-size: 100%;
+    }
+    
+    .main-nav li a:link,
+    .main-nav li a:visited {
+        display: block;
+        border: 0;
+        padding: 5px 0;
+    }
+    
+    .mobile-nav-icon { display: inline-block; }
+    
+    .sticky .main-nav { margin-top: 5px;}
+
+    .sticky .main-nav li {
+        padding-left: 50px;
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+
+    .sticky .main-nav li a:link,
+    .sticky .main-nav li a:visited {
+        padding: 0;
+        color: #555;
+    }
+
+    .sticky .logo {
+        height: 60px;
+        width: auto;
+        float: left;
+        filter: none;
+    }    
+    
+    .sticky .mobile-nav-icon { margin-top: 10px; }
+    
+    .sticky .mobile-nav-icon ion-icon {
+        font-size: 200%;
+        color: #555;
     }
     
     h1 { font-size: 180%; }
@@ -63,9 +114,6 @@
 /* SMALL PHONES FROM 0 TO 480px */
 @media only screen and (max-width: 480px) {
     body { font-size: 14px; }
-    .main-nav {
-        display: none;
-    }
     .btn-github:link,
     .btn-github:visited{ margin-left: 10% }
 }
